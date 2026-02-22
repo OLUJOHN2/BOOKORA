@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKORA | Shop</title>
+    <link rel="stylesheet" href="style">
+</head>
+<body>
+    <!-- HEADER -->
+     <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <h1>BOOKORA</h1>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <!-- <li><a href="#">Best Sellers</a></li> -->
+                </ul>
+            </nav>
+
+            <div class="cart">
+                <a href="cart.html">Cart (0)</a>
+            </div>
+        </div>
+     </header>
+
+     <main>
+        <section class="shop-header">
+            <div class="container">
+                <h2>All Books</h2>
+
+                <div class="shop-controls">
+                    <select name="" id="">
+                        <option value="">Sort by Price: Low to High</option>
+                        <option value="">Sort by Price: High to Low</option>
+                        <option value="">Sort Alphabetically</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop-content">
+            <div class="container shop-layout">
+
+                <!-- sidebar -->
+                 <aside class="sidebar">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li>fiction</li>
+                        <li>Business</li>                   
+                        <li>Christian & Inspirational</li>            
+                        <li>Technology</li>                   
+                        <li>Health</li> 
+                     </ul>                  
+                 </aside>
+
+                 <!-- Books Grid -->
+                  <div class="books-grid" id="books-container">
+                    <!-- js will render books here -->
+                  </div>
+
+            </div>
+        </section>
+     </main>
+
+     <footer>
+        <div class="container">
+            <p>&copy; 2026 BOOKORA. All rights reserved.</p>
+        </div>
+     </footer>
+</body>
+</html>
