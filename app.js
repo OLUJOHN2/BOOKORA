@@ -1,6 +1,4 @@
-// ========================================
 // CART LOGIC
-// ========================================
 
 function getCart() {
   return JSON.parse(localStorage.getItem("cart")) || [];
@@ -84,6 +82,31 @@ function updateCartCount() {
 
 updateCartCount();
 
+// Add to cart button
+const buttons = document.querySelectorAll(".add-to-cart");
+
+buttons.forEach(function(button) {
+  button.addEventListener("click", function() {
+    alert("Book added to cart!");
+  });
+});
+
+// Update Counter number
+document.addEventListener("DOMContentLoaded", function() {
+
+  let count = 0;
+
+  const buttons = document.querySelectorAll(".add-to-cart");
+  const cartCount = document.getElementById("cart-count");
+
+  buttons.forEach(function(button) {
+    button.addEventListener("click", function() {
+      count++;
+      cartCount.textContent = count;
+    });
+  });
+
+});
 
 // ========================================
 // CATEGORY FILTER
